@@ -1,19 +1,39 @@
+interface Person {
+    firstName:string;
+    lastName: string
+    age: number;
+
+    address: Adress
+    
+}
+
+interface Adress {
+        postalCode: string;
+        city: string;
+}
 
 
 
-let person = { 
-    firstname:'Tony',
-    lastName:'Stark',
-    age:45,
+const ironman = { 
+    firstName: 'Tony' ,
+    lastName: 'Stark' ,
+    age: 45,
+    adress:{
+    postalcode: 'abc123',
+    city:'New York',
+    },
 };
 
-person.firstName = 'Peter';
-person.lastName = 'Parker';
 
-person ={
-    firstName : 'Peter',
-    lastName : 'Parker',
-    age: 22,
-};
 
-console.log(person);
+console.log(ironman);
+
+//const spiderman = structuredClone(ironman);
+
+//ironman.firstName = 'Peter' ,
+//ironman.lastName = 'Parker' ,
+//spiderman.age = 19;
+
+//spiderman.address.city= 'sssyj';
+
+//console.log(ironman,spiderman);
